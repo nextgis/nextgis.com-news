@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <title>Тема письма</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <style>
+            img{
+                display: block;
+                margin: 0px;
+                border: none;
+                line-height: 100%;
+                font-size: 14px;
+                font-weight: bold;
+                outline: none;
+                text-decoration:none;
+                text-transform: capitalize;
+            }
+
+            a{
+                color: #176fc1;
+                text-decoration: underline;
+            }
+
+            table{
+                max-width: 100%;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                margin:0;
+            }
+            .wrapper-table{
+                max-width: 600px !important;
+                width: 96% !important;
+            }
+
+            .content-padding{
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            #templatePreheader td,
+            #templateHeader td,
+            #templateFooter td,
+            #templateFooterBottom td{
+                mso-line-height-rule: exactly;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                word-break: break-word;
+            }
+
+            #templateFooterBottom{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .typography{
+                font-family: Open Sans, Helvetica, Arial;               
+            }
+
+            .base-text{
+                line-height: 1.5;
+                color: #505050;
+                text-align: left;
+                font-size: 14px;
+            }
+
+            h1, .h1,
+            .mail-template h1,
+            .mail-template .h1{
+                color: #202020;
+                display: block;
+                font-size: 26px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                text-align: left;
+                line-height: 1.2;
+                margin-top:0 !important;
+            }
+
+            
+            h2, .h2,
+            .mail-template h2,
+            .mail-template .h2{
+                color: #202020;
+                display: block;              
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                line-height: 1.2;
+                margin-top: 0px !important;
+            }
+
+            .spacer-wrapper{                
+               padding-top: 25px;
+               padding-bottom: 30px;
+               padding-left:0;
+               padding-right: 0;
+            }
+
+            .spacer{
+               width: 100%;
+               border-top-width: 2px;
+               border-top-style: solid;
+               border-top-color: #dce8f3;
+            }
+            ul{
+                padding-left: 20px !important;
+            }
+
+
+            ul li,
+            ol li{
+                margin-bottom: 8px;
+            }
+
+            .info{
+                background-color: #E8E8E8;
+                font-size: 16px;
+                line-height: 1.5;
+                border-radius: 4px; 
+            }
+
+            .info-text{
+                font-size: 16px;
+                padding-top:15px; 
+                padding-bottom:15px; 
+                padding-left:0px;
+                padding-right: 30px;
+            }
+
+            .info-pic{
+                padding-top:15px; 
+                padding-bottom:15px; 
+                padding-left:15px;
+                padding-right: 15px;
+            }
+
+            .social-links {
+              vertical-align: middle !important;
+              margin-left: -3px !important;
+              margin-top:0 !important;
+              margin-bottom: 0 !important;
+              margin-right:0 !important;
+              padding:0 !important;
+              list-style-type: none !important;
+          }
+
+              .social-links .social-links__item {
+                display: inline-block !important;
+                padding-left: 3px !important;
+                padding-right: 0 !important; 
+                margin-bottom: 0 !important;
+                margin-left:0 !important;
+                margin-right: 0 !important;
+                margin-top:0 !important;
+                list-style-type: none !important;
+                }
+
+            .social-link {
+              text-decoration: none;
+              width: 30px;
+              height: 30px;
+              display: block; }
+
+            .social-link:hover, .social-link:focus, .social-link:active, .social-link:active:focus {
+                text-decoration: none; 
+            }   
+
+            .main-pic{
+                margin-left: 10px;
+            }
+
+            .nav-link{
+                text-decoration: none;
+                color: #00b77e;
+                line-height: 100%;
+                font-size: 14px;
+            }
+
+            @media (max-width: 480px){
+                .content-padding{
+                    padding-top: 20px !important;
+                    padding-bottom: 20px !important;
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
+                }
+
+                h1, .h1{
+                    font-size: 18px !important;
+                }
+
+                h2, .h2{
+                    font-size: 16px !important;
+                }
+
+                .info{
+                    font-size: 14px !important;
+                }
+
+                .info-text{
+                    padding-right: 20px !important;
+                }
+                .info-pic{
+                    padding-right: 0 !important;
+                }
+
+                .info img{
+                    display: none !important;
+                }
+
+                .social-links{
+                    padding-left:0 !important;
+                }
+
+                .social-link{
+                    width: 20px !important;
+                    height: 20px !important;
+                }
+
+                .social-link img{
+                    width: 20px !important;
+                    height: 20px !important;
+                }
+
+                .main-pic{
+                    display: none !important;
+                }
+
+                .address{
+                    font-size: 11px !important;
+                }
+
+                .nav-link{
+                    font-size: 13px !important;
+                    display: none !important;
+                }
+
+                .logo{
+                    text-align: center !important;
+                }
+
+                .logo img{
+                    display: inline !important;
+                }
+
+                #templateFooter td{
+                    font-size: 13px !important;
+                }
+
+                #templateFooterBottom{
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+            }
+
+        </style>
+        
+    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: none;margin: 0;padding: 0;background-color: #f5f9fc;width: 100% !important;">
+        <center>
+            <table class="mail-template" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable" style="padding: 0;height: 100% !important; width: 100% !important; background-color: #f5f9fc;">
+                <tr>
+                    <td align="center" valign="top">                        
+                        <!--[if mso]>
+                            <table width = "680"><tr><td>
+                        <![endif]-->
+                        <!-- // Begin Template Preheader \\ -->
+                        <table class="wrapper-table" border="0" cellpadding="0" cellspacing="0" id="templatePreheader" style="background-color: #f5f9fc; padding-left: 10px; padding-right: 10px;">
+                            <tbody><tr>
+                                <td valign="top" class="preheaderContent">                                
+                                    <!-- // Begin Module: Standard Preheader \\ -->
+                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" >
+                                        <tbody><tr>
+                                            <td class="logo" valign="middle" style="padding-top: 30px; padding-bottom: 15px;">
+                                                <img align="none" width="96" height="24" src="http://nextgis.com/img/mail/nextgis.png" style="width: 96px;height: 24px;display: block;margin: 0px;border: none;line-height: 100%;font-size: 14px;font-weight: bold;outline: none;text-decoration: none;text-transform: capitalize;" width="96">
+                                            </td>
+                                            <td valign="middle" align="right" style="padding-top: 30px; padding-bottom: 15px;">
+                                                <a class="nav-link typography" href="http://my.nextgis.com" target="_blank">Перейти к Веб ГИС →</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- // End Module: Standard Preheader \\ -->
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>                        
+                        <!-- // End Template Preheader \\ -->
+                        <table class="wrapper-table" border="0" cellpadding="0" cellspacing="0" id="templateContainer" style="border: 2px solid #dce8f3;background-color: #FDFDFD; margin:0; padding:0;">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <!-- // Begin Template Body \\ -->
+                                    <table style="margin: 0;padding: 0;" border="0" cellpadding="0" cellspacing="0" id="templateBody">
+                                        <tr>
+                                            <td valign="top" class="bodyContent" style="background-color: #FDFDFD;">
+                                
+                                                <!-- // Begin Module: Standard Content \\ -->
+                                               <table style="margin: 0;" border="0"  cellspacing="0" width="100%">
+                                                    <tbody><tr>
+                                                        <td class="content-padding base-text typography" valign="top">
+                                                            <table style="margin: 0; padding:0;" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="base-text typography" valign="top">
+                                                                          <h1 class="h1 typography">Привет пользователям <a style="color: #202020; text-decoration: none">Nextgis.com</a>!</h1>
+                                                                          Спасибо, что используете наш сервис. <br>
+                                                                          Если вы вдруг пропустили, по этой ссылке можно ознакомиться с официальным объявлением о запуске: <a href="http://nextgis.ru/blog/nextgis-com/">http://nextgis.ru/blog/nextgis-com/</a>.
+                                                                        </td>
+                                                                        <td class="base-text typography" valign="middle">
+                                                                             <img class="main-pic" src="http://nextgis.com/img/mail/rocket.png" width="147">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <br>
+                                                            Вот краткий список изменений и улучшений, которые мы сделали по вашей просьбе за последнюю неделю.
+                                                            <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 !important"><tbody><tr><td class="spacer-wrapper">
+                                                                <table class="spacer" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span style="display:none">&nbsp;</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody></table>
+                                                            </td></tr></tbody></table>
+                                                            <h2 class="h2 typography">Делиться картами в соц. сетях стало удобнее</h2>
+                                                            <ul style="margin-bottom:0">
+                                                                <li class="base-text">Ссылка на веб карту расшаренная в социальных сетях теперь будет выглядеть красиво)</li>
+                                                                <li class="base-text">Ссылки на оформление карты (пермалинки) теперь короче и сохраняют даже угол вращения карты</li>
+                                                            </ul>
+                                                            <table  border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="spacer-wrapper">
+                                                                <table class="spacer" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span style="display:none">&nbsp;</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody></table>
+                                                            </td></tr></tbody></table>
+                                                            <h2 class="h2 typography">Улучшаем сообщения при добавлении ресурсов</h2>
+                                                            <ul style="margin-bottom:0">
+                                                                <li>Более понятные сообщения об ошибках при загрузке данных/создании векторных слоёв (особенно для данных в формает ESRI Shape)</li>
+                                                                <li>Дополнительные разъяснения при создании WMS/WFS сервиса подскажут, что делать с полученными ссылками дальше</li>
+                                                            </ul>
+                                                            <table  border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="spacer-wrapper">
+                                                                <table class="spacer" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span style="display:none">&nbsp;</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody></table>
+                                                            </td></tr></tbody></table>
+                                                            <h2 class="h2 typography">Легкая обратная связь</h2>
+                                                            <ul style="margin-bottom:0">
+                                                                <li>На любой странице <a href="http://my.nextgis.com" target="_blank">my.nextgis.com</a> в нижнем правом углу теперь есть кнопка обратной связи, которая позволит быстро сообщить об ошибке или что-то предложить</li>
+                                                            </ul>
+                                                            <br>
+                                                            <table class="info typography" border="0" cellpadding="0" cellspacing="0">
+                                                            <tbody><tr>
+                                                                <td class="info-pic" valign="middle" style="text-align:left;">
+                                                                    <img src="http://nextgis.com/img/mail/question.png" width="60">
+                                                                </td>
+                                                                <td class="info-text" valign="middle">
+                                                                   Набор полезных ссылок, которые помогут начать работу с сервисом можно найти здесь: <a href="http://nextgis.ru/help">http://nextgis.ru/help</a>
+                                                                </td>
+                                                            </tr></tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                                <!-- // End Module: Standard Content \\ -->
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // Begin Template Footer \\ -->
+                        <table class="wrapper-table" border="0" cellpadding="0" cellspacing="0" id="templateFooter" style="background-color: #DCE8F3;border: 2px solid #DCE8F3;padding: 0; ">
+                            <tbody>
+                                <tr>
+                                    <td class="content-padding typography base-text"  valign="top" style="padding-top: 20px;  padding-bottom: 20px;">
+                                        Присылайте свои&nbsp;идеи и&nbsp;замечания, мы&nbsp;постараемся их&nbsp;учесть! <br>
+                                        Команда NextGIS
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="wrapper-table" id="templateFooterBottom" >
+                            <tbody>
+                                <tr>
+                                    <td class="address typography" valign="top" style="color: #999; font-size: 13px; padding-top: 15px; padding-bottom: 0;">© NextGIS, +7 968 730-52-52<br>  Москва, Вавилова, 41, офис 2</td>
+                                    <td class="typography" valign="top" align="right" style="padding-top: 15px; padding-bottom: 0;">
+                                        <table class="social-links" cellspacing="0" cellpadding="0" >
+                                            <tbody><tr>
+                                                <td class="social-links__item">
+                                                    <a class="social-link social-link--twtr" href="http://twitter.com/nextgis" target="_blank">
+                                                        <img src="http://nextgis.ru/wp-content/themes/nextgis_clean/img/twtr-icon.png" alt="Twitter" width="30" height="30">
+                                                    </a> 
+                                                </td>               
+                                                <td class="social-links__item">
+                                                    <a class="social-link social-link--fb" href="http://www.facebook.com/pages/NextGIS/141140662637244?sk=wall" target="_blank">
+                                                        <img src="http://nextgis.ru/wp-content/themes/nextgis_clean/img/fb-icon.png" alt="Facebook" width="30" height="30">
+                                                    </a>    
+                                                </td>
+                                                <td class="social-links__item">
+                                                    <a class="social-link social-link--gplus" href="https://plus.google.com/106080702686527456816/posts" target="_blank" >
+                                                        <img src="http://nextgis.ru/wp-content/themes/nextgis_clean/img/gplus-icon.png" alt="Google plus" width="30" height="30" >
+                                                    </a>   
+                                                </td>
+                                            </tr></tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>                        
+                        <br>
+                        <br>
+                        <!-- // End Template Footer \\ -->
+                        <!--[if mso]>
+                            </td></tr></table>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>  
+        </center>
+    </body>
+</html>
